@@ -14,7 +14,7 @@ module.exports.config = {
  credits: "Islamick Chat",
  description: "auto reply to salam",
  commandCategory: "noprefix",
- usages: "",
+ usages: "!",
  cooldowns: 5,
  dependencies: {
  "request":"",
@@ -26,7 +26,7 @@ module.exports.config = {
 module.exports.handleEvent = async ({ api, event, Threads }) => {
  const content = event.body ? event.body : '';
  const body = content.toLowerCase();
- if (body.startsWith("")) {
+ if (body.startsWith("!")) {
  const rahad = [
  "╭•┄┅════❁🌺❁════┅┄•╮\n \n —͟͞͞★𝐋𝐎𝐕𝐄🌟𝐋𝐈𝐓𝐄🌟𝐀𝐋𝐋🌟𝐂𝐄𝐎🌟𝐁𝐎𝐗🔥࿐\n\n╰•┄┅════❁🌺❁════┅┄•╯",
  "╭•┄┅════❁🌺❁════┅┄•╮\n\—͟͞͞★𝐋𝐎𝐕𝐄🌟𝐋𝐈𝐓𝐄🌟𝐀𝐋𝐋🌟𝐂𝐄𝐎🌟𝐁𝐎𝐗🔥🫩࿐\n\n╰•┄┅════❁🌺❁════┅┄•╯"
