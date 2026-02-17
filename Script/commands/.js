@@ -3,7 +3,7 @@ const fs = require("fs");
 const request = require("request");
 
 const link = [
- "https://i.imgur.com/YeNEBPK.mp4",
+ "https://i.imgur.com/lkvKzdD.mp4",
 
 ];
 
@@ -14,7 +14,7 @@ module.exports.config = {
  credits: "Islamick Chat",
  description: "auto reply to salam",
  commandCategory: "noprefix",
- usages: "!",
+ usages: "",
  cooldowns: 5,
  dependencies: {
  "request":"",
@@ -26,10 +26,10 @@ module.exports.config = {
 module.exports.handleEvent = async ({ api, event, Threads }) => {
  const content = event.body ? event.body : '';
  const body = content.toLowerCase();
- if (body.startsWith("!")) {
+ if (body.startsWith("")) {
  const rahad = [
- "╭•┄┅════❁🌺❁════┅┄•╮\n \n আমি আমার রবের উপর ভরসা রাখি-!!🥺\n\n╰•┄┅════❁🌺❁════┅┄•╯",
- "╭•┄┅════❁🌺❁════┅┄•╮\n\আমি আমার রবের উপর ভরসা রাখি!!🥺\n\n╰•┄┅════❁🌺❁════┅┄•╯"
+ "╭•┄┅════❁🌺❁════┅┄•╮\n \n —͟͞͞★𝐋𝐎𝐕𝐄🌟𝐋𝐈𝐓𝐄🌟𝐀𝐋𝐋🌟𝐂𝐄𝐎🌟𝐁𝐎𝐗🔥࿐\n\n╰•┄┅════❁🌺❁════┅┄•╯",
+ "╭•┄┅════❁🌺❁════┅┄•╮\n\—͟͞͞★𝐋𝐎𝐕𝐄🌟𝐋𝐈𝐓𝐄🌟𝐀𝐋𝐋🌟𝐂𝐄𝐎🌟𝐁𝐎𝐗🔥🫩࿐\n\n╰•┄┅════❁🌺❁════┅┄•╯"
 
  ];
  const rahad2 = rahad[Math.floor(Math.random() * rahad.length)];
